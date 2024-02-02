@@ -35,6 +35,7 @@ class Student
 		getline(cin,stu_college);
 		cout << endl;
 	}
+
 	void output()
 	{
 		cout << "ID : " << stu_id << endl;

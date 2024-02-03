@@ -8,7 +8,7 @@ class Merge
 	
 	void ans()
 	{
-//user input of feet and inch
+// user input of feet and inch
 		cout << "Enter feet 1 : ";
 		cin >> feet1;
 		cout << "Enter feet 2 : ";
@@ -31,7 +31,7 @@ class Merge
 
 int main()
 {
-//object of class Merge
+// object of class Merge
 	Merge merge1;
 	
 	merge1.ans();

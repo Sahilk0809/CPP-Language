@@ -8,6 +8,7 @@ class Merge
 	
 	void ans()
 	{
+//user input of feet and inch
 		cout << "Enter feet 1 : ";
 		cin >> feet1;
 		cout << "Enter feet 2 : ";
@@ -17,6 +18,7 @@ class Merge
 		cout << "Enter inch 2 : ";
 		cin >> inch2;	
 	
+//process to convert
 		feet1 = feet1 + (inch1/12);
 		inch1 = inch1%12;
 		feet2 = feet2 + (inch2/12);
@@ -29,6 +31,7 @@ class Merge
 
 int main()
 {
+//object of class Merge
 	Merge merge1;
 	
 	merge1.ans();

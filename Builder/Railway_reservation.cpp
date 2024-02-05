@@ -9,6 +9,7 @@ class Reservation
 	
    	void displayRecord()
 	{
+//details of trains print
 		cout << "Train number : " << train_number << endl;
 		cout << "Train name : " << train_name << endl;
 		cout << "Source : " << source << endl;
@@ -18,6 +19,7 @@ class Reservation
 	}
 	void searchTrainNumber()
 	{
+//train details by searching with train number
 		cout << "Enter train number : ";
 		cin >> train_number;
 		cout << "Train number : " << train_number << endl;
@@ -32,6 +34,7 @@ class Reservation
 	
 	void record()
 	{
+//process of what user want to print
 		while(1)
 		{
 			int choice;
@@ -62,6 +65,7 @@ class Reservation
 	}	
 	void userInput()
 	{
+//user input of train details
 		cout << "Enter train number : ";
 		cin >> train_number;
 		cin.ignore();
@@ -82,17 +86,17 @@ class Reservation
 
 int main()
 {
-	int n,i;
+	int n,i;//i is for loop counter
 	cout << "Enter the number of train details you want : ";
-	cin >> n;
-	Reservation r[n];
+	cin >> n;//n number of train details
+	Reservation r[n];//object of the class
 	
 	cout << endl;
 	
 	for(i=0; i<n; i++)
 	{
 	    cout << "Train " << i+1 << endl;
-		r[i].userInput();
+		r[i].userInput();//calling the methods of class
 		r[i].record();
 	}
 	

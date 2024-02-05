@@ -7,26 +7,6 @@ class Reservation
 	int train_number;
 	string train_name,source,destination,train_time;
 	
-	public : 
-	
-	void userInput()
-	{
-		cout << "Enter train number : ";
-		cin >> train_number;
-		cin.ignore();
-		
-		cout << "Enter train name : ";
-		getline(cin,train_name);
-		
-		cout << "Enter source : ";
-		getline(cin,source);
-		
-		cout << "Enter destination : ";
-		getline(cin,destination);
-		
-		cout << "Enter train time : ";
-		getline(cin,train_time);	
-	}
    	void displayRecord()
 	{
 		cout << "Train number : " << train_number << endl;
@@ -47,6 +27,9 @@ class Reservation
 		cout << "Train time : " << train_time << endl;
 		cout << endl;
 	}
+	
+	public :
+	
 	void record()
 	{
 		while(1)
@@ -61,7 +44,7 @@ class Reservation
 			
 			if(choice==4)
 			{
-				cout << "Thank you for choosing !";
+				cout << "Thank you for choosing !" << endl;
 				break;	
 			}
 			
@@ -77,6 +60,24 @@ class Reservation
 			}
 		}	
 	}	
+	void userInput()
+	{
+		cout << "Enter train number : ";
+		cin >> train_number;
+		cin.ignore();
+		
+		cout << "Enter train name : ";
+		getline(cin,train_name);
+		
+		cout << "Enter source : ";
+		getline(cin,source);
+		
+		cout << "Enter destination : ";
+		getline(cin,destination);
+		
+		cout << "Enter train time : ";
+		getline(cin,train_time);	
+	}
 };
 
 int main()
@@ -86,8 +87,11 @@ int main()
 	cin >> n;
 	Reservation r[n];
 	
+	cout << endl;
+	
 	for(i=0; i<n; i++)
 	{
+	    cout << "Train " << i+1 << endl;
 		r[i].userInput();
 		r[i].record();
 	}

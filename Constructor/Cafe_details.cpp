@@ -18,6 +18,7 @@ class Cafe
     
     void set()
     {
+        //user input
         cout << "Enter cafe ID : ";
         cin >> cafe_id;
         cin.ignore();
@@ -45,6 +46,7 @@ class Cafe
     }
     void get()
     {
+        //display input
         cout << endl;
         cout << "ID : " << cafe_id << endl;
         cout << "Cafe name : " << cafe_name << endl;

@@ -4,7 +4,7 @@ using namespace std;
 class Area
 {
 	protected : 
-	int area,heigth,width,radi;
+	float area,heigth,width,radi;
 	
 	virtual void calculate() = 0;
 };

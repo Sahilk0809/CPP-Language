@@ -15,8 +15,8 @@ class Distance
         }
         void getter()
         {
-            cout << "Km : " << this->km << endl;
-            cout << "Meter : " << this->meter <<endl;
+            cout << "Km : " << this -> km << endl;
+            cout << "Meter : " << this -> meter <<endl;
         }
         Distance operator+(Distance &d2)
         {

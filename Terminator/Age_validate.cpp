@@ -30,7 +30,7 @@ int main()
 	{
 		a1.vote();
 	}
-	catch(int a)
+	catch(...)
 	{
 		cout << "You Are Not Eligible to Vote...!" << endl;	
 	}
